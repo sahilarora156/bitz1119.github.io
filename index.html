@@ -1,0 +1,57 @@
+
+<!-- $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
+    $("body").append(a[0].content + "<p>— " + a[0].title + "</p>")
+  }) -->
+  
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mywebsite</title>
+</head>
+<style>
+    .blue
+    {
+        background-image: url("h.jpeg");
+    }
+    .bac
+    {
+        background-image: url("bb.jpg");
+    }
+    .bc{
+        color: beige;
+        size: 30px;
+    }
+    .al{
+        align-self: center;
+        margin: 10%;
+    }       
+</style>
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <div class="container-fluid bac" style="margin: 30px " >
+        <div class="row well blue" style = " margin : 50px">
+            <div class="col-xs-12 text-center bc" >
+            <h1> <font size = 10> Quotes </font></h1>
+        </div>
+        </div>
+        <div class = "col-xs-12 text-center well " id="quote">
+            Message come here
+        </div>
+        <div class="col-xs-12 text-center">
+            <button class = " btn-primary text-center al" id = "but">
+                Get the Quote
+            </button>
+        </div>
+    </div>
+</body>
+</html>
